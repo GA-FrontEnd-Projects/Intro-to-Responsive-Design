@@ -1,0 +1,47 @@
+RealtyCorp Listings page
+
+Difficulty Level: Medium
+
+Technologies/skills used: CSS, media queries
+
+
+
+Problem Description:
+
+RealtyCorp, a stylish new real estate broker, has hired you to finish building their website. The previous developer was more of a designer, really, so while the site looks decent, it's not quite done.
+
+RealtyCorp loves their new listings page, but they heard someone talking about "responsive design" and immediately decided their site needed that, as well. The new CSS3-ified listings page has started to bring in more business, but they are still short on cash, so they only want the listings page to be responsive at the moment.
+
+
+Requirements:
+
+	1) The partners have asked you to design for four screen width ranges:
+		* 960px and wider
+		* Between 768px and 959px
+		* Between 480px and 767px
+		* Between 320px and 479px
+
+	The first media query has been created for you (the width > 960 case is handled by the main styles). Add the last two media queries.
+
+	2) When the screen width is less than 960px and greater than or equal to 768px, change the width of #content to 768px. Using the same logic, change the width of #content to be appropriate for each screen width range.
+
+	3) In the 768 - 959 range, you'll notice that you lost the centering of the listings. Center #listings-container.
+
+	4) In the 480 - 767 range, center #listings-container. You'll also notice that the top nav menu is off-center, and if you click around, you'll notice that the other pages don't handle changes in screen width very well. Hide the "contact us" page link in the nav and remove the right margin from the "listings" page link. Center the logo, the nav, and the h2 and h3 text inside #main and reduce the line height of the nav links to 50px. Do all of this for all screen widths < 767px. Is there a more DRY way to do this than writing the same rules in multiple media queries?
+
+	5) In the 320-479 range, reduce the font size of the h2 inside #main to 28px and reduce the width of .listing items to 226px. Center #listings-container if it is not already centered.
+
+	6) Add a width .5s transition to #content so that a slight animation takes place between screen width breakpoints.
+
+	7) If you get through all the above, set up a jQuery event handler to mimic a media query for screens wider than 1280px. If you wanted to write something quickly yourself, this would be how you handle older broswers that don't support media queries (IE8 and below, to name the notorious ones). Otherwise you could use something like Respond.js: https://github.com/scottjehl/Respond to handle it for you.
+
+
+
+
+
+	
+	Helpful CSS examples and articles:
+
+	* Responsive design: http://responsivedesign.ca/ (just to illustrate the concept)
+	* Media queries: http://www.css3.info/preview/media-queries/
+	
